@@ -12,12 +12,10 @@
         @pesquisar-pokemon="searchPokemon"
       />
     </section>
-    <section class="pokemon-description"></section>
   </main>
 </template>
 
 <script>
-import PokemonCard from "./components/PokemonCard.vue";
 import PokemonFound from "./components/PokemonFound.vue";
 import InputSearch from "./components/InputSearch.vue";
 import axios from "axios";
@@ -36,7 +34,6 @@ export default {
   components: {
     InputSearch,
     PokemonFound,
-    PokemonCard,
   },
   methods: {
     searchPokemon(nome) {
@@ -144,29 +141,4 @@ export default {
 };
 </script>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-main {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 700px;
-  background-color: #c33338;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  border: solid 4px #541113;
-  border-radius: 8px;
-}
-
-@media (min-width: 768px) {
-  .search-pokemon {
-  }
-}
-</style>
+<style></style>

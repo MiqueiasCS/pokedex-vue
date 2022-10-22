@@ -1,0 +1,23 @@
+.pokemon_list-image {
+  min-width: 160px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 80px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 24px;
+    color: #222;
+    font-weight: bold;
+    transition: 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}

@@ -35,26 +35,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.pokemon_list-image {
-  min-width: 160px;
-  max-width: 300px;
-  display: flex;
-  align-items: center;
-}
-.pokemon_list-image img {
-  width: 80px;
-  margin-right: 6px;
-}
-
-.pokemon_list-image span {
-  font-size: 24px;
-  color: #222;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.pokemon_list-image span:hover {
-  cursor: pointer;
-  color: #fff;
-}
-</style>
+<style scoped></style>
