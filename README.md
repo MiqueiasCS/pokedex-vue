@@ -9,7 +9,7 @@ Mini pokedex
     - acesse a pasta do repositório:
 
 ```sh
-cd pasta
+cd pokedex-vue
 ```
 
     - instale as dependências:
