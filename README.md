@@ -4,25 +4,23 @@ Mini pokedex
 
 ## Para rodar
 
-    - baixe o repositório;
+- baixe o repositório através de uma das opções do botão **code** (botão verde) localizado na parte superior direita deste repositório;
 
-    - acesse a pasta do repositório:
+- acesse a pasta do repositório;
 
-```sh
-cd pokedex-vue
-```
-
-    - instale as dependências:
+- com o terminal aberto, instale as dependências:
 
 ```sh
 npm install
 ```
 
-    - Execute o comando:
+- Execute o seguinte comando para rodar a aplicação:
 
 ```sh
 npm run dev
 ```
+- acesse o link de endereço mostrado no terminal
+
 
 # Atividade
 
