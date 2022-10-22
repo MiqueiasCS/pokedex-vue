@@ -51,7 +51,6 @@ export default {
           this.pokemonImage = res.data.sprites.front_default;
           this.pokemonName = res.data.species.name;
 
-          console.log("stats", res.data.stats);
           this.stats = res.data.stats;
           this.showInfo = true;
 
@@ -122,20 +121,19 @@ export default {
         .then((res) => {
           console.log(res.data.chain);
           this.evolucoes.push(res.data.chain.species);
-          this.percorrerArryDeEvolucoes(res.data.chain.evolves_to);
+          this.creatingEvolutionChainArray(res.data.chain.evolves_to);
         })
         .catch((err) => console.log("funcao getEvolutionsInfo", err));
     },
 
-    percorrerArryDeEvolucoes(arr) {
+    creatingEvolutionChainArray(arr) {
       if (arr.length < 1) {
-        console.log("evolucoes", this.evolucoes);
         return undefined;
       }
 
       this.evolucoes.push(arr[0].species);
 
-      return this.percorrerArryDeEvolucoes(arr[0].evolves_to);
+      return this.creatingEvolutionChainArray(arr[0].evolves_to);
     },
   },
 };
