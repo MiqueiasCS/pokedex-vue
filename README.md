@@ -2,6 +2,10 @@
 
 Mini pokedex
 
+## Tecnologias Utilizadas:
+- [x] Vue.js
+- [x] Sass
+
 ## Para rodar
 
 - baixe o repositório através de uma das opções do botão **code** (botão verde) localizado na parte superior direita deste repositório;
